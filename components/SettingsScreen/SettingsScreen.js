@@ -80,7 +80,7 @@ const Movie = () => {
           <SafeAreaView style={styles.container}>
           <FlatList
             data={elements}
-            keyExtractor={item=> item.id}
+            keyExtractor={item=> item.id.toString()}
             ItemSeparatorComponent={separator}
             renderItem= {({item})=>(
                 <TouchableOpacity style={styles.contenedor}>
